@@ -14,7 +14,7 @@ css: article.css
 
 
 <div class = "time">
-
+**15 min read**
 </div>
 
 
@@ -44,9 +44,9 @@ And then it struck me, **TEXT ANALYSIS!**
 
 I always hated the annoying task of having to analyse text, be it in the form of comments on the internet, transcripts from focus groups or something else, does not matter. As you might know, if you've done this sort of analysis, this can be a really boring and tedious work and can take a large amount of time. The way I used to do it was to read the comments, categorize each one then do some basic analysis based on those categories.
 
-You can avoid spending the huge amount of time on this situation of you learn how to analyse text using a programming language and here is why. You can be required to analyse text either as a recurring report or as a one time analysis. In both cases text analysis can be very beneficial.
+You can avoid spending the huge amount of time on this situation if you learn how to analyse text using a programming language and here is why. You can be required to analyse text either as a recurring report or as a one time analysis. In both cases text analysis can be very beneficial.
 
-In the first case is kind of self-explanatory. You need to spend the time to set up the analysis, graphs and report, but this need to be done just one and you can use it every time you want to refresh the report. The other solution is to analyse the data manually every time.
+In the first case is kind of self-explanatory. You need to spend the time to set up the analysis, graphs and report, but this needs to be done just once and you can use it every time you want to refresh the report. The other solution is to analyse the data manually every time.
 
 Now, what about the second case, when you have a one time report? Wouldn't it take just as much time to set up the report as it would to analyse it manually? Well, no and you will see in the article below how easy it can be to analyse data using `R`.
 
@@ -81,7 +81,7 @@ So, with the disclaimers out of the way we will discuss:
 
 <div class="paragraph">
 
-As a dataset, I though that as series of phone reviews would be a good starting point. 
+As a dataset, I though that a series of phone reviews would be a good starting point. 
   
 As an analyst, it might be required of you to spend some time analysing reviews for different products your company makes and get insight from said reviews. As a dummy dataset I have chosen a series of reviews for the **OnePlus** phone models. You can check the reviews [here](https://www.pcmag.com/categories/mobile-phones/brands/oneplus).
   
@@ -488,7 +488,7 @@ Here we can see a more nuanced approach.
 
 For example, the **OnePlus 6T** and the **OnePlus 7 (for China)** have no negative reviews, but they also have only a few positive things said about them. This seems to be reflected in their placement in the previous graph as well. 
 
-A curious case can be for the **OnePlus 3** which seems to have more positive than negative reviews, however as an overall score it is dead last on a positivity ranking. This indicates that the review did not regard this model with high praise or the really negative descriptions where very negative. Most likely a combination of both.
+A curious case can be for the **OnePlus 3** which seems to have more positive than negative reviews, however as an overall score it is dead last on a positivity ranking. This indicates that the review did not regard this model with high praise or the really negative descriptions were very negative. Most likely a combination of both.
 
 Both these approaches have their advantages and disadvantages and in practice you will most likely use a combination of both, not just one. It is really useful to view a problem from multiple angles. You never know which method is helpful for the decision makers in your company.
 
