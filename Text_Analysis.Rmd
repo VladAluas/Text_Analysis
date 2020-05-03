@@ -30,13 +30,31 @@ ________________
 
 <div class="paragraph">
 
-Recently I found myself with some free time on my hands so I decided to learn a new skill, or at least start learning. So I tought to myself, what would be a good skill that would help me as a data analyst or would have helped me in the past? It had to be something that took a lot of time and that could be automated.
+Recently I found myself with some free time on my hands so I decided to learn a new skill, or at least start learning. So I thought to myself, what would be a good skill that would help me as a data analyst or would have helped me in the past? It had to be something that took a lot of time and that could be automated.
+
+</div>
   
-And then it struck me, **TEXT ANALYSIS!** I often found myself, or colleagues of mine found themselves, in the annoying situation in which I had to read countless comments about a product, or read countless transcripts of focus groups, and try to figure out what is the message of the transcripts / comments, what is different from one text to another or one product to another and especially what is the sentiment transmitted by the text.
+<div class="paragraph">
+
+And then it struck me, **TEXT ANALYSIS!** 
+
+</div>
+
+<div class="paragraph">
+
+I always hated the annoying task of having to analyse text, be it in the form of comments on the internet, transcripts from focus groups or something else, does not matter. As you might know, if you've done this sort of analysis, this can be a really boring and tedious work and can take a large amount of time. The way I used to do it was to read the comments, categorize each one then do some basic analysis based on those categories.
+
+You can avoid spending the huge amount of time on this situation of you learn how to analyse text using a programming language and here is why. You can be required to analyse text either as a recurring report or as a one time analysis. In both cases text analysis can be very beneficial.
+
+In the first case is kind of self-explanatory. You need to spend the time to set up the analysis, graphs and report, but this need to be done just one and you can use it every time you want to refresh the report. The other solution is to analyse the data manually every time.
+
+Now, what about the second case, when you have a one time report? Wouldn't it take just as much time to set up the report as it would to analyse it manually? Well, no and you will see in the article below how easy it can be to analyse data using `R`.
+
+</div>
+
+<div class="paragraph">
   
-As you might know if you've done this sort of work, it can be a really boring and tedious work and it can take a lot of time. Especially if it is a recurring report, a lot of your time will be spent on reading and quantifying comments or focus group transcripts. I think of this as a waste of time for an analyst because the time can be better spent discussing the results, elaborating hypothesis on what can cause the effect and proposing solutions. 
-  
-So, in order to see what can be done for the above situation I have started reading  [**Text Mining with R**](https://www.tidytextmining.com/index.html) by *Julia Silge* and *David Robinson*. I highly recommend this book as their approach is to transform the text into a tidy format that allows you to easily analyse and visualize the results using graphs. As a plus, the process is easy to automatize.
+So, in order to see how to analyse text using `R` I have started reading  [**Text Mining with R**](https://www.tidytextmining.com/index.html) by *Julia Silge* and *David Robinson*. I highly recommend this book as their approach is to transform the text into a tidy format that allows you to easily analyse and visualize the results using graphs.
 
 </div> 
 
@@ -46,9 +64,9 @@ So, in order to see what can be done for the above situation I have started read
 
 I would like to shortly discuss the structure of the article and make some disclaimers about it, so we are on the same page.
   
-This article is intended just as an introductory example into what text analysis can do and how it can be used by data analysts to free up a lot of their time. It is not intended as a comprehensive course on Natural Language Processing (NLP), as that is a complex topic that cannot be dealt with in just one article. Here, I will just show you three methods that can cover a great deal of analytical needs in a company, and they can free up a lot of your time as an data analyst.
+This article is intended just as an introductory example into what text analysis can do and how it can be used by data analysts, although I encourage you to study further if you think these methods can be useful. It is not intended as a comprehensive course on Natural Language Processing (NLP), as that is a complex topic that cannot be dealt with in just one article. Here, I will just show you three methods that can cover a great deal of analytical needs in a company.
   
-I would also like to point out that I will show some basic sentiment analysis methods, however they do not cover all the possibilities and are just the tip of the iceberg. That being said, with some tweaking, they can reliably be used as a starting point in the endeavors to automate this process, with more complex methods being added at a latter time.
+I would also like to point out that I will show some basic sentiment analysis methods, however they do not cover all the possibilities and are just the tip of the iceberg. That being said, with some tweaking, they can reliably be used as a starting point in the endeavours to automate this process, with more complex methods being added at a latter time.
 
 So, with the disclaimers out of the way we will discuss:
   
@@ -431,7 +449,7 @@ The scores are in and overall the **Oneplus 2** has the best reviews.
 
 However, what if we want to see a report on which model has the most positive and negative reviews? For that we would use the `bing` library.
 
-Lets see how:
+Let's see how:
 
 </div>
 
@@ -533,7 +551,7 @@ reviews_tidy %>%
 
 <div class="paragraph">
 
-This is a vey quick and useful way to show which elements influence the sentiment for your product the most and make decisions based on it. 
+This is a very quick and useful way to show which elements influence the sentiment for your product the most and make decisions based on it. 
 
 We can clearly see that the words that influence the most the negative scores are *noise*, *expensive* and *loud* while the ones that influence the positive reviews are *excellent*, *fast* and *smooth*.
 
@@ -555,15 +573,11 @@ I plan to go into more detail in a series of articles on the subject, so if you 
 
 <div class="paragraph">
 
-This article is just a quick glance into text analysis and the capabilities of `R` to help you in your day to day tasks. 
-  
-When I read the book, I realised how much time my colleagues or I would spend on a task that can take a few hours to set up once and then just let the script run and do the task or you. This was really eye-opening to me and I became an even greater supporter of automatization.
+When I read the book, I realised that this type of analysis is very scalable, if done with a programming language like `R`. By this I mean that a computer will have no problem in analysing 10 or 30.000 words in about the same time. For a human the difference is huge.
 
-Let's be honest, as a data analyst you will always have tasks that are repetitive and boring but have to be done. 
+Besides being scalable, this analysis can be done multiple times without having to change the code or spend the time setting everything up.
 
-These can be something simple or very complex, however their accuracy most of the time depends on your ability to focus. We are all humans and have a bad day from time to time, and it's normal, so why let this influence the results of our analysis when you can automate the task?
-
-Software, statistically speaking, has way less off days than humans do.
+The last advantage of this is that this method is not prone to human error or fatigue. Let's be honest, we as humans get tired after some time spent in the same task, and we can get errors. Why not avoid this if possible?
 
 </div>
 
